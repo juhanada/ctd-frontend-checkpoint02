@@ -11,85 +11,79 @@
 
 </head>
 
-<header>
-    <h1>Formulário de cadastro</h1>
-</header>
 <body>
+    
+    <header>
+        <h1>Formulário de cadastro</h1>
+    </header>
+    
+    <section class="section-landing">
+    </section>    
 
+    <section class="section-form">
+        <a href="#section-form"></a>
 
-    <div class="formcadastro">
-        <h1>Cadastro</h1>
-    </div>
+        <div class="form-header">
+            <h1>Cadastro</h1>
+        </div>
 
-    <div class="conteudo">
+        <div class="form-content">
 
+            <form action="#" method="POST">
+                <fieldset>
+                    <label for="input-name">Nome</label>
+                    <input type="text" id="input-name" maxlength="100" name="input-nome">
+                </fieldset>
 
-        <form>
-            <div id="nome">
-                <h2 class="nome">Nome</h2>
-                <input class="firstname" type="text" name="primeiro_nome" maxlength="100">
-                <!-- <label class="label1">Nome</label> -->
+                <fieldset>
+                    <label for="input-email">E-mail</label>
+                    <input type="email" id="input-email" name="input-email">
+                </fieldset>
 
+                <fieldset>
+                    <label class="input-phone">Telefone</label>
+                    <input type="number" id="input-phone" name="input-phone">
+                </fieldset>
 
-            </div>
-
-            <div id="nome">
-                <h2 class="nome">Email</h2>
-                <input class="email" type="text" name="email">
-                <!-- <label class="label1">Email</label> -->
-            </div>
-
-            <div id="nome">
-                <h2 class="nome">Telefone</h2>
-                <input class="codigo" type="text" name="codigo_area">
-                <!-- <label class="numero_telefone">Telefone</label> -->
-            </div>
-
-            <div id="nome">
-                <h2 class="nome">Maior de 18 anos</h2>
-                <label class="radio">
-                    <input class="radio-1" type="radio" name="radio" checked="checked" name="">
-                    <span class="checkmark"></span>
-                    Sim
-                </label>
-
-                <label class="radio">
-                    <input class="radio-1" type="radio" name="radio" checked="checked" name="">
-                    <span class="checkmark"></span>
-                    Não
-                </label>
-            </div>
-        
-            <div id="nome">
-                <h2 class="nome">Ponto Turístico</h2>
+                <fieldset>
+                    <legend>Maior de 18 anos</legend>
+                    <input type="radio" id="input-radio-yes" name="input-yes">
+                    <label for="input-radio-yes">Sim</label>
+                    <input type="radio" id="input-radio-no" name="input-no">
+                    <label for="input-radio-no">Não</label>
+                </fieldset>
             
-                <select class="opcoes" name="assunto">
-                    <option disabled="disabled" selected="selected">Selecione</option>
-                    <option>Tal</option>
-                    <option>Tal</option>
-                    <option>Tal</option>
-                </select>
-            </div>
+                <fieldset>
+                    <label for="input-ponto">Ponto Turístico</h2>
+                    <select id="input-ponto">
+                        <option disabled selected>Selecione</option>
+                        <option value="ponto1" name="input-ponto1">ponto1</option>
+                        <option value="ponto2" name="input-ponto2">ponto2</option>
+                        <option value="ponto3" name="input-ponto3">ponto3</option>
+                    </select>
+                </fieldset>
 
-            <div id="nome">
-                <h2 class="nome">Tipo de Visitante</h2>
-                <label for="opcao1" >Turista</label>
-                <input type="checkbox" id="opcao1" name="turista" value="a"> 
+                <fieldset>
+                    <legend>Tipo de Visitante</legend>
+                    <label for="input-check-turista" >Turista</label>
+                    <input type="checkbox" id="input-check-turista" name="input-turista" value="turista"> 
 
-                <label for="opcao2" >Residente</label>
-                <input type="checkbox" id="opcao1" name="residente" value="b"> 
+                    <label for="input-check-residente" >Residente</label>
+                    <input type="checkbox" id="input-check-residente" name="input-residente" value="residente"> 
 
-                <label for="opcao2" >Estudante</label>
-                <input type="checkbox" id="opcao1" name="estudante" value="c"> 
-            </div>
-            <div class="btn">
-                <button type="submit">Enviar</button>
-                <button type="reset">Apagar</button>
-            </div>
-        </form>
+                    <label for="input-check-estudante" >Estudante</label>
+                    <input type="checkbox" id="input-check-estudante" name="input-estudante" value="estudante"> 
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Apagar</button>
+                </div>
+            </form>
 
 
-    </div>
+        </div>
+    </section>
 
     <footer>
         <p>Atividade realizada na disciplina de Front-End I do Curso CTD da Digital House</p>
