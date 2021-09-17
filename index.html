@@ -23,65 +23,78 @@
     <section class="section-form">
         <a href="#section-form"></a>
 
-        <div class="form-header">
-            <h1>Cadastro</h1>
-        </div>
+        
+        <div class="form">
 
-        <div class="form-content">
+            <div class="form-header">
+                <h1>Cadastro</h1>
+            </div>
 
-            <form action="#" method="POST">
-                <fieldset>
-                    <label for="input-name">Nome</label>
-                    <input type="text" id="input-name" maxlength="100" name="input-nome">
-                </fieldset>
+            <div class="form-content">
 
-                <fieldset>
-                    <label for="input-email">E-mail</label>
-                    <input type="email" id="input-email" name="input-email">
-                </fieldset>
+                <form action="#" method="POST">
+                    <fieldset>
+                        <label class="fieldname" for="input-name">NOME</label>
+                        <input class="text" type="text" id="input-name" maxlength="100" name="input-nome" required>
+                        <div class="line"></div>
+                    </fieldset>
 
-                <fieldset>
-                    <label class="input-phone">Telefone</label>
-                    <input type="number" id="input-phone" name="input-phone">
-                </fieldset>
+                    <fieldset>
+                        <label class="fieldname" for="input-email">E-MAIL</label>
+                        <input class="text" type="email" id="input-email" name="input-email" required>
+                        <div class="line"></div>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Maior de 18 anos</legend>
-                    <input type="radio" id="input-radio-yes" name="input-yes">
-                    <label for="input-radio-yes">Sim</label>
-                    <input type="radio" id="input-radio-no" name="input-no">
-                    <label for="input-radio-no">Não</label>
-                </fieldset>
-            
-                <fieldset>
-                    <label for="input-ponto">Ponto Turístico</h2>
-                    <select id="input-ponto">
-                        <option disabled selected>Selecione</option>
-                        <option value="ponto1" name="input-ponto1">ponto1</option>
-                        <option value="ponto2" name="input-ponto2">ponto2</option>
-                        <option value="ponto3" name="input-ponto3">ponto3</option>
-                    </select>
-                </fieldset>
+                    <fieldset>
+                        <label class="fieldname" for="input-phone">TELEFONE</label>
+                        <input class="text" type="number" id="input-phone" name="input-phone" required>
+                        <div class="line"></div>
+                    </fieldset>
 
-                <fieldset>
-                    <legend>Tipo de Visitante</legend>
-                    <label for="input-check-turista" >Turista</label>
-                    <input type="checkbox" id="input-check-turista" name="input-turista" value="turista"> 
+                    <fieldset>
+                        <label class="fieldname" for="input-birth">DATA DE NASCIMENTO</label>
+                        <input class="text" type="date" id="input-birth" name="input-birth" value="2005-01-01" required>
+                        <div class="line"></div>
+                    </fieldset>
 
-                    <label for="input-check-residente" >Residente</label>
-                    <input type="checkbox" id="input-check-residente" name="input-residente" value="residente"> 
+                    <fieldset>
+                        <label class="fieldname" for="input-maior">MAIOR DE 18 ANOS</label>
+                        <input type="radio" id="input-radio-yes" name="input-maior" checked>
+                        <label for="input-radio-yes">Sim</label>
+                        <input type="radio" id="input-radio-no" name="input-maior">
+                        <label for="input-radio-no">Não</label>
+                    </fieldset>
+                
+                    <fieldset>
+                        <label class="fieldname" for="input-ponto">PONTO TURÍSTICO</h2>
+                        <select id="input-ponto" name="input-ponto" required>
+                            <option disabled selected>Selecione</option>
+                            <option value="ponto1" name="input-ponto">ponto1</option>
+                            <option value="ponto2" name="input-ponto">ponto2</option>
+                            <option value="ponto3" name="input-ponto">ponto3</option>
+                        </select>
+                    </fieldset>
 
-                    <label for="input-check-estudante" >Estudante</label>
-                    <input type="checkbox" id="input-check-estudante" name="input-estudante" value="estudante"> 
-                </fieldset>
+                    <fieldset>
+                        <label class="fieldname" for="input-tipo">TIPO DE VISITANTE</label>
+                        <label for="input-check-turista" >Turista</label>
+                        <input type="checkbox" id="input-check-turista" name="input-tipo" value="turista"> 
 
-                <div class="form-actions">
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Apagar</button>
-                </div>
-            </form>
+                        <label for="input-check-residente" >Residente</label>
+                        <input type="checkbox" id="input-check-residente" name="input-tipo" value="residente"> 
+
+                        <label for="input-check-estudante" >Estudante</label>
+                        <input type="checkbox" id="input-check-estudante" name="input-tipo" value="estudante"> 
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit">ENVIAR</button>
+                        <button type="reset">APAGAR</button>
+                    </div>
+                </form>
 
 
+            </div>
         </div>
     </section>
 

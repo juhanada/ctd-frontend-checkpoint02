@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    --light-gray: #f2f2f2;
+    --dark-brown: #593202;
+    --medium-brown: #A65D03;
+    --sunny-orange: #f29d35;
+    --light-brown: #d9b88f;
 }
 
 section.section-form{
@@ -11,32 +17,83 @@ section.section-form{
     background-position: center;
     background-size: cover;
     font-family: sans-serif;
-    margin-top: 40px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-header{
     width: 500px;
-    background-color: rgb(144, 200, 200);
+    background-color: var(--medium-brown);
     margin: auto;
-    color: white;
+    color: var(--light-gray);
     padding: 10px 0px 10px 0px;
     text-align: center;
     border-radius: 10px 10px 0 0;
 }
 
 .form-content{
-    background-color: rgba(73, 66, 66, 0.747);
+    background-color: var(--light-gray);
     width: 500px;
     margin: auto;
+    padding: 10px 40px 30px;
 }
 
-form{
-padding: 100px;
+fieldset {
+    border: none;
+    margin-top: 20px;
 }
 
-#nome{
+label.fieldname {
+    display: block;
+}
+
+input.text {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 0;
     width: 100%;
-    height: 100px;
+    padding: 4px;
 }
 
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
 
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--light-gray) inset;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: black !important;
+}
+
+.line {
+    width: 100%;
+    background-color: black;
+    height: 2px;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 20px 0px;
+}
+
+form button {
+    background-color: var(--medium-brown);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: var(--light-gray);
+}
