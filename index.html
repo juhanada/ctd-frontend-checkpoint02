@@ -1,32 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+
     <title>Cadastro - Checkpoint 02</title>
+
 </head>
+
+<header>
+    <h1>Formulário de cadastro</h1>
+</header>
 <body>
-    <header>
-        <h1>Formulário de Cadastro</h1>
-    </header>
 
-    <main>
 
-        <section>
-            <form>
+    <div class="formcadastro">
+        <h1>Cadastro</h1>
+    </div>
 
-            </form>
-        </section>
+    <div class="conteudo">
 
-    </main>
+
+        <form>
+            <div id="nome">
+                <h2 class="nome">Nome</h2>
+                <input class="firstname" type="text" name="primeiro_nome" maxlength="100">
+                <!-- <label class="label1">Nome</label> -->
+
+
+            </div>
+
+            <div id="nome">
+                <h2 class="nome">Email</h2>
+                <input class="email" type="text" name="email">
+                <!-- <label class="label1">Email</label> -->
+            </div>
+
+            <div id="nome">
+                <h2 class="nome">Telefone</h2>
+                <input class="codigo" type="text" name="codigo_area">
+                <!-- <label class="numero_telefone">Telefone</label> -->
+            </div>
+
+            <div id="nome">
+                <h2 class="nome">Maior de 18 anos</h2>
+                <label class="radio">
+                    <input class="radio-1" type="radio" name="radio" checked="checked" name="">
+                    <span class="checkmark"></span>
+                    Sim
+                </label>
+
+                <label class="radio">
+                    <input class="radio-1" type="radio" name="radio" checked="checked" name="">
+                    <span class="checkmark"></span>
+                    Não
+                </label>
+            </div>
+        
+            <div id="nome">
+                <h2 class="nome">Ponto Turístico</h2>
+            
+                <select class="opcoes" name="assunto">
+                    <option disabled="disabled" selected="selected">Selecione</option>
+                    <option>Tal</option>
+                    <option>Tal</option>
+                    <option>Tal</option>
+                </select>
+            </div>
+
+            <div id="nome">
+                <h2 class="nome">Tipo de Visitante</h2>
+                <label for="opcao1" >Turista</label>
+                <input type="checkbox" id="opcao1" name="turista" value="a"> 
+
+                <label for="opcao2" >Residente</label>
+                <input type="checkbox" id="opcao1" name="residente" value="b"> 
+
+                <label for="opcao2" >Estudante</label>
+                <input type="checkbox" id="opcao1" name="estudante" value="c"> 
+            </div>
+            <div class="btn">
+                <button type="submit">Enviar</button>
+                <button type="reset">Apagar</button>
+            </div>
+        </form>
+
+
+    </div>
 
     <footer>
         <p>Atividade realizada na disciplina de Front-End I do Curso CTD da Digital House</p>
         <p>Alunos: </p>
-        <a></a> <p>Diego Decrescenzo </p>
-        <a></a> <p>Juíle Hanada </p>
-        <a></a> <p>Wallace Souza</p>
+        <a></a>
+        <p>Diego Decrescenzo </p>
+        <a></a>
+        <p>Juíle Hanada </p>
+        <a></a>
+        <p>Wallace Souza</p>
     </footer>
 </body>
+
 </html>
