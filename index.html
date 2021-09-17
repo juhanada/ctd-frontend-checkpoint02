@@ -27,46 +27,49 @@
         <div class="form">
 
             <div class="form-header">
-                <h1>Cadastro</h1>
+                <h1 class="form-title">CADASTRO</h1>
             </div>
 
             <div class="form-content">
 
                 <form action="#" method="POST">
                     <fieldset>
-                        <label class="fieldname" for="input-name">NOME</label>
+                        <label class="block-field" for="input-name">NOME</label>
                         <input class="text" type="text" id="input-name" maxlength="100" name="input-nome" required>
                         <div class="line"></div>
                     </fieldset>
 
                     <fieldset>
-                        <label class="fieldname" for="input-email">E-MAIL</label>
+                        <label class="block-field" for="input-email">E-MAIL</label>
                         <input class="text" type="email" id="input-email" name="input-email" required>
                         <div class="line"></div>
                     </fieldset>
 
                     <fieldset>
-                        <label class="fieldname" for="input-phone">TELEFONE</label>
+                        <label class="block-field" for="input-phone">TELEFONE</label>
                         <input class="text" type="number" id="input-phone" name="input-phone" required>
                         <div class="line"></div>
                     </fieldset>
 
                     <fieldset>
-                        <label class="fieldname" for="input-birth">DATA DE NASCIMENTO</label>
+                        <label class="block-field" for="input-birth">DATA DE NASCIMENTO</label>
                         <input class="text" type="date" id="input-birth" name="input-birth" value="2005-01-01" required>
                         <div class="line"></div>
                     </fieldset>
 
-                    <fieldset>
-                        <label class="fieldname" for="input-maior">MAIOR DE 18 ANOS</label>
-                        <input type="radio" id="input-radio-yes" name="input-maior" checked>
-                        <label for="input-radio-yes">Sim</label>
-                        <input type="radio" id="input-radio-no" name="input-maior">
-                        <label for="input-radio-no">Não</label>
+                    <fieldset class="inline-fieldset">
+                        <label class="inline-field"  for="input-maior">MAIOR DE 18 ANOS</label>
+
+                        <div class="radio-options">
+                            <input type="radio" id="input-radio-yes" name="input-maior" checked>
+                            <label for="input-radio-yes">Sim</label>
+                            <input type="radio" id="input-radio-no" name="input-maior">
+                            <label for="input-radio-no">Não</label>
+                        </div>
                     </fieldset>
                 
-                    <fieldset>
-                        <label class="fieldname" for="input-ponto">PONTO TURÍSTICO</h2>
+                    <fieldset class="inline-fieldset">
+                        <label class="inline-field" for="input-ponto">PONTO TURÍSTICO</label>
                         <select id="input-ponto" name="input-ponto" required>
                             <option disabled selected>Selecione</option>
                             <option value="ponto1" name="input-ponto">ponto1</option>
@@ -76,15 +79,24 @@
                     </fieldset>
 
                     <fieldset>
-                        <label class="fieldname" for="input-tipo">TIPO DE VISITANTE</label>
-                        <label for="input-check-turista" >Turista</label>
-                        <input type="checkbox" id="input-check-turista" name="input-tipo" value="turista"> 
+                        <label class="block-field" for="input-tipo">TIPO DE VISITANTE</label>
 
-                        <label for="input-check-residente" >Residente</label>
-                        <input type="checkbox" id="input-check-residente" name="input-tipo" value="residente"> 
-
-                        <label for="input-check-estudante" >Estudante</label>
-                        <input type="checkbox" id="input-check-estudante" name="input-tipo" value="estudante"> 
+                        <div class="check-options">
+                            <div class="check-option">
+                                <label for="input-check-turista" >Turista</label>
+                                <input type="checkbox" id="input-check-turista" name="input-tipo" value="turista"> 
+                            </div>
+                                
+                            <div class="check-option">
+                                <label for="input-check-residente" >Residente</label>
+                                <input type="checkbox" id="input-check-residente" name="input-tipo" value="residente"> 
+                            </div>
+                            
+                            <div class="check-option">
+                                <label for="input-check-estudante" >Estudante</label>
+                                <input type="checkbox" id="input-check-estudante" name="input-tipo" value="estudante"> 
+                            </div>
+                        </div>
                     </fieldset>
 
                     <div class="form-actions">
