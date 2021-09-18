@@ -5,120 +5,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+
+    <!--Icon styles -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css">
+
+    <!-- Style Custom -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Cadastro - Checkpoint 02</title>
 
 </head>
 
 <body>
-    
+
+    <!-- INICIO CABECALHO -->
     <header>
-        <h1>Formulário de cadastro</h1>
+        <a href="">
+            <img src="img/logo.png" alt="Logo Cidade Treviso">
+            <h1>Treviso - Itália</h1>
+        </a>
+
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="#form">Contato</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    
-    <section class="section-landing">
-    </section>    
+    <!-- FIM CABECALHO -->
 
-    <section class="section-form">
-        <a href="#section-form"></a>
+    <main>        
+        <!-- INICIO CONTEUDO PRINCIPAL -->
+        <section class="conteudo-principal">
 
-        
-        <div class="form">
-
-            <div class="form-header">
-                <h1 class="form-title">CADASTRO</h1>
+            <div class="titulo">
+                <h2>Treviso - A cidade da Arte!</h2>
             </div>
 
-            <div class="form-content">
+            <p>Treviso é uma comuna italiana da <strong>região do Vêneto</strong>, capital da homônima província de
+                Treviso,
+                com cerca de 83.650 habitantes. <br> Estende-se por uma área de 55,58 km², tendo uma densidade
+                populacional
+                de 1505 hab/km²</p>
 
-                <form action="#" method="POST">
-                    <fieldset>
-                        <label class="block-field" for="input-name">NOME</label>
-                        <input class="text" type="text" id="input-name" maxlength="100" name="input-nome" required>
-                        <div class="line"></div>
-                    </fieldset>
-
-                    <fieldset>
-                        <label class="block-field" for="input-email">E-MAIL</label>
-                        <input class="text" type="email" id="input-email" name="input-email" required>
-                        <div class="line"></div>
-                    </fieldset>
-
-                    <fieldset>
-                        <label class="block-field" for="input-phone">TELEFONE</label>
-                        <input class="text" type="number" id="input-phone" name="input-phone" required>
-                        <div class="line"></div>
-                    </fieldset>
-
-                    <fieldset>
-                        <label class="block-field" for="input-birth">DATA DE NASCIMENTO</label>
-                        <input class="text" type="date" id="input-birth" name="input-birth" value="2005-01-01" required>
-                        <div class="line"></div>
-                    </fieldset>
-
-                    <fieldset class="inline-fieldset">
-                        <label class="inline-field"  for="input-maior">MAIOR DE 18 ANOS</label>
-
-                        <div class="radio-options">
-                            <input type="radio" id="input-radio-yes" name="input-maior" checked>
-                            <label for="input-radio-yes">Sim</label>
-                            <input type="radio" id="input-radio-no" name="input-maior">
-                            <label for="input-radio-no">Não</label>
-                        </div>
-                    </fieldset>
-                
-                    <fieldset class="inline-fieldset">
-                        <label class="inline-field" for="input-ponto">PONTO TURÍSTICO</label>
-                        <select id="input-ponto" name="input-ponto" required>
-                            <option disabled selected>Selecione</option>
-                            <option value="ponto1" name="input-ponto">ponto1</option>
-                            <option value="ponto2" name="input-ponto">ponto2</option>
-                            <option value="ponto3" name="input-ponto">ponto3</option>
-                        </select>
-                    </fieldset>
-
-                    <fieldset>
-                        <label class="block-field" for="input-tipo">TIPO DE VISITANTE</label>
-
-                        <div class="check-options">
-                            <div class="check-option">
-                                <label for="input-check-turista" >Turista</label>
-                                <input type="checkbox" id="input-check-turista" name="input-tipo" value="turista"> 
-                            </div>
-                                
-                            <div class="check-option">
-                                <label for="input-check-residente" >Residente</label>
-                                <input type="checkbox" id="input-check-residente" name="input-tipo" value="residente"> 
-                            </div>
-                            
-                            <div class="check-option">
-                                <label for="input-check-estudante" >Estudante</label>
-                                <input type="checkbox" id="input-check-estudante" name="input-tipo" value="estudante"> 
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <div class="form-actions">
-                        <button type="submit">ENVIAR</button>
-                        <button type="reset">APAGAR</button>
-                    </div>
-                </form>
-
-
+            <div class="media">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9RmKdPakz-c"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
-        </div>
-    </section>
 
+            <ol class="lista-curiosidades">
+
+                <h2>Curiosidades</h2>
+
+                <li>Zona rica de recursos hídricos</li>
+                <li>Nome da cidade é de origem Celtica</li>
+                <li>O clima de Treviso é subcontinental</li>
+            </ol>
+        </section>
+        <!-- FIM CONTEUDO PRINCIPAL -->
+
+        <!-- INICIO SECTION FORMULARIO -->
+        <section class="section-form">
+
+            <div class="form-imagem">
+                <img src="img/treviso.jpg" alt="Mapa Italia - Treviso">
+            </div>
+
+            <!-- INICIO FORMULARIO -->
+            <div id="form" class="form">
+
+                <div class="form-header">
+                    <h1 class="form-title">CADASTRO</h1>
+                </div>
+
+                <div class="form-content">
+
+                    <form action="#" method="POST">
+                        <fieldset>
+                            <label class="block-field" for="input-name">NOME</label>
+                            <input class="text" type="text" id="input-name" maxlength="100" name="input-nome" required>
+                            <div class="line"></div>
+                        </fieldset>
+
+                        <fieldset>
+                            <label class="block-field" for="input-email">E-MAIL</label>
+                            <input class="text" type="email" id="input-email" name="input-email" required>
+                            <div class="line"></div>
+                        </fieldset>
+
+                        <fieldset>
+                            <label class="block-field" for="input-phone">TELEFONE</label>
+                            <input class="text" type="number" id="input-phone" name="input-phone" required>
+                            <div class="line"></div>
+                        </fieldset>
+
+                        <fieldset>
+                            <label class="block-field" for="input-birth">DATA DE NASCIMENTO</label>
+                            <input class="text" type="date" id="input-birth" name="input-birth" value="2005-01-01"
+                                required>
+                            <div class="line"></div>
+                        </fieldset>
+
+                        <fieldset class="inline-fieldset">
+                            <label class="inline-field" for="input-maior">MAIOR DE 18 ANOS</label>
+
+                            <div class="radio-options">
+                                <input type="radio" id="input-radio-yes" name="input-maior" checked>
+                                <label for="input-radio-yes">Sim</label>
+                                <input type="radio" id="input-radio-no" name="input-maior">
+                                <label for="input-radio-no">Não</label>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="inline-fieldset">
+                            <label class="inline-field" for="input-ponto">PONTO TURÍSTICO</label>
+                            <select id="input-ponto" name="input-ponto" required>
+                                <option disabled selected>Selecione</option>
+                                <option value="ponto1" name="input-ponto">Museu Civil</option>
+                                <option value="ponto2" name="input-ponto">Parque Natural</option>
+                                <option value="ponto3" name="input-ponto">Praça "Piazza dei Signori"</option>
+                                <option value="ponto4" name="input-ponto">Fonte "Fontana delle Tette"</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset>
+                            <label class="block-field" for="input-tipo">TIPO DE VISITANTE</label>
+
+                            <div class="check-options">
+                                <div class="check-option">
+                                    <label for="input-check-turista">Turista</label>
+                                    <input type="checkbox" id="input-check-turista" name="input-tipo" value="turista">
+                                </div>
+
+                                <div class="check-option">
+                                    <label for="input-check-residente">Residente</label>
+                                    <input type="checkbox" id="input-check-residente" name="input-tipo"
+                                        value="residente">
+                                </div>
+
+                                <div class="check-option">
+                                    <label for="input-check-estudante">Estudante</label>
+                                    <input type="checkbox" id="input-check-estudante" name="input-tipo"
+                                        value="estudante">
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-actions">
+                            <button type="submit">ENVIAR</button>
+                            <button type="reset">APAGAR</button>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+            <!-- FIM FORMULARIO -->
+
+        </section>
+        <!-- FIM SECTION FORMULARIO -->
+
+    </main>
+
+    <!-- RODAPE -->
     <footer>
         <p>Atividade realizada na disciplina de Front-End I do Curso CTD da Digital House</p>
         <p>Alunos: </p>
-        <a></a>
-        <p>Diego Decrescenzo </p>
-        <a></a>
-        <p>Juíle Hanada </p>
-        <a></a>
-        <p>Wallace Souza</p>
+        <div class="grupo">
+            <a target="_blank" href="https://github.com/diegodecrescenzo"><i class="fab fa-github"></i>Diego Decrescenzo</a>
+            <a target="_blank" href="https://github.com/juhanada"><i class="fab fa-github"></i>Juíle Hanada</a>
+            <a target="_blank" href="https://github.com/WallaceCS21"><i class="fab fa-github"></i>Wallace Souza</a>
+        </div>
     </footer>
 </body>
 

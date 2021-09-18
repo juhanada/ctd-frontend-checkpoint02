@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@300;700&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --light-gray: #f2f2f2;
+    --dark-brown: #593202;
+    --medium-brown: #A65D03;
+    --sunny-orange: #f29d35;
+    --light-brown: #d9b88f;
+}
+
+
+/*********** CABEÇALHO ***********/
+header{
+    align-items: center;
+    background-color: var(--medium-brown);
+    display: flex;
+    padding: 20px;
+}
+
+header > a{
+    align-items: center;
+    display: flex;
+    max-width: 350px;
+    text-decoration: none;
+}
+
+header > a h1 {
+    color: var(--light-gray);
+    display: inline;
+    font-size: 1.8rem;
+    margin-left: 10px;
+}
+
+header > a img{
+    width: 100px;
+}
+
+header > nav {
+    width: calc(100% - 350px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+header > nav ul{
+    display: flex;
+}
+
+header > nav li{
+    align-items: center;
+    display: flex;
+    margin-right: 30px;
+}
+
+header > nav a{
+    color: var(--light-gray);
+    font-size: 1.4rem;
+    padding: 20px;
+    text-decoration: none;
+}
+
+header > nav a:hover{
+    background-color: var(--light-gray);
+    border-radius: 15px;
+    color:var(--medium-brown);
+    text-decoration: underline;
+}
+
+
+/*********** MAIN ***********/
+.titulo{
+    background-color: var(--light-brown);
+    padding: 10px 0;
+    margin-top: 2rem;
+}
+
+.titulo h2{
+    color: #000;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.conteudo-principal{
+    background-image: url('../img/treviso2.jpg');
+    background-position: center;
+    background-size: cover;
+    color: var(--light-gray);
+    height: 100%;
+    overflow-x: hidden;
+    text-align: center;
+    width: 100vw;  
+}
+
+.conteudo-principal p{
+    background-color: #000000a9;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+}
+
+.media{
+    margin: 0;
+    
+}
+
+iframe{    
+    height: 720px;
+    width: 1280px;
+}
+
+.lista-curiosidades{
+    background: #000000a9;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    margin: 2rem 0;
+}
+
+.lista-curiosidades h2{
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+ol li {
+    margin: 0.5rem;
+}
+
+
+/*********** FORMULARIO ***********/
+section.section-form{
+    background-color: var(--light-brown);
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.form{
+    margin: 80px 0;
+}
+
+.form-imagem{
+    background-color: var(--dark-brown);
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px #000;
+    max-width: 250px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.form-imagem img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.form-imagem img:hover{
+    animation: zoom 2s;
+}
+
+@keyframes zoom {
+    from{
+        transform: scale(1.2);
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    to{
+        transform: scale(3.5);
+        position: relative;
+        top: 130px;
+        left: -170px;                
+    }
+}
+
+.form-header{
+    width: 500px;
+    background-color: var(--medium-brown);
+    margin: auto;
+    color: var(--light-gray);
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.form-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.form-content{
+    background-color: var(--light-gray);
+    width: 500px;
+    margin: auto;
+    padding: 10px 80px 40px;
+}
+
+fieldset {
+    border: none;
+    margin-top: 40px;
+}
+
+label.block-field {
+    display: block;
+}
+
+label.inline-field, label.block-field{
+    font-family: 'Montserrat', sans-serif;
+}
+
+input.text {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 0 0;
+    width: 100%;
+    padding: 4px;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+    
+}
+input[type=number] { 
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px var(--light-gray) inset;
+}
+
+/* Cor do texto do autocomplete */
+input:-webkit-autofill {
+    -webkit-text-fill-color: black !important;
+}
+
+.line {
+    width: 100%;
+    background-color: black;
+    height: 2px;
+}
+
+fieldset.inline-fieldset {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="radio"] + label{
+    margin-left: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+label + input[type=radio]{
+    margin-left: 16px;
+}
+
+label + input.text {
+    margin-top: 4px;
+}
+
+select {
+    border-radius: 10px;
+    background-color: var(--light-gray);
+    padding: 2px 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.check-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+label + input[type="checkbox"] {
+    margin-left: 6px;
+}
+
+.form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 20px 0px;
+}
+
+form button {
+    background-color: var(--medium-brown);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    color: var(--light-gray);
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: all .3s ease-in-out;
+}
+
+form button:hover{
+    background-color: var(--dark-brown);
+}
+
+
+/*********** RODAPE ***********/
+footer{
+    background-color: var(--medium-brown);
+    color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+footer > p{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+
+}
+
+footer > div{
+    display: flex;
+}
+
+footer > .grupo a{
+    align-items: center;
+    color: var(--light-gray);
+    display: flex;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 5px 10px;
+    text-decoration: none;
+}
+
+footer > .grupo a:hover{
+    background-color: var(--light-gray);
+    border-radius: 15px;
+    color: var(--dark-brown);    
+}
+
+footer > .grupo a i{
+    font-size: 1.8rem;
+    margin-right: 5px;
+}
