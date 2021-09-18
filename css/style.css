@@ -46,9 +46,9 @@ header > a img{
 }
 
 header > nav {
-    width: calc(100% - 350px);
     display: flex;
     justify-content: flex-end;
+    width: calc(100% - 350px);
 }
 
 header > nav ul{
@@ -85,15 +85,14 @@ header > nav a:hover{
 }
 
 .titulo{
-    /* border-right: 4px solid #000; */
+    animation: escrever 4s steps(40) 1s normal both;       
     color: #000;
     display: flex;
     font-size: 3rem; 
     margin: 0 auto;
-    white-space: nowrap;
     overflow: hidden;
     text-align: center;
-    animation: escrever 4s steps(40) 1s normal both;       
+    white-space: nowrap;
 }
 
 @keyframes escrever {
@@ -152,7 +151,7 @@ ol li {
 
 /*********** FORMULARIO ***********/
 section.section-form{
-    background-color: var(--light-brown);
+    background-color: var(--sunny-orange);
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
@@ -161,26 +160,64 @@ section.section-form{
     position: relative;
 }
 
+.waves {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+  }
+
+  .wave-1 {
+    animation: moveWave1 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveWave1 {
+    from {
+      transform: translateX(-2000px);
+    }
+  }
+
+  .wave-2 {
+    animation: moveWave2 3s 1.2s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveWave2 {
+    from {
+      transform: translateX(-1800px);
+    }
+  }
+
+  .wave-3 {
+    animation: moveWave3 3s 0.7s ease-in-out infinite alternate;
+  }
+
+  @keyframes moveWave3 {
+    from {
+      transform: translateX(-1600px);
+    }
+  }
+
 .form{
     margin: 80px 0;
+    z-index: 3;
 }
 
 .form-imagem{
     background-color: var(--dark-brown);
     border-radius: 50%;
+    bottom: 20px;
     box-shadow: 2px 2px 5px #000;
     max-width: 250px;
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    overflow: hidden;
     padding: 10px;
+    overflow: hidden;
+    right: 20px;
     text-align: center;
 }
 
 .form-imagem img{
-    width: 100%;
     border-radius: 50%;
+    width: 100%;
 }
 
 .form-imagem img:hover{
@@ -203,13 +240,13 @@ section.section-form{
 }
 
 .form-header{
-    width: 500px;
     background-color: var(--medium-brown);
-    margin: auto;
+    border-radius: 10px 10px 0 0;
     color: var(--light-gray);
+    margin: auto;
     padding: 10px 0px 10px 0px;
     text-align: center;
-    border-radius: 10px 10px 0 0;
+    width: 500px;
 }
 
 .form-title {
@@ -220,9 +257,9 @@ section.section-form{
 
 .form-content{
     background-color: var(--light-gray);
-    width: 500px;
     margin: auto;
     padding: 10px 80px 40px;
+    width: 500px;
 }
 
 fieldset {
@@ -241,10 +278,10 @@ label.inline-field, label.block-field{
 input.text {
     background-color: transparent;
     border: none;
-    outline: none;
     box-shadow: 0 0 0 0;
-    width: 100%;
+    outline: none;
     padding: 4px;
+    width: 100%;
 }
 
 input {
@@ -258,12 +295,12 @@ input[type=number]::-webkit-inner-spin-button {
     
 }
 input[type=number] { 
-    -moz-appearance: textfield;
     appearance: textfield;
+    -moz-appearance: textfield;
 }
 
 input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0 30px var(--light-gray) inset;
+    box-shadow: 0 0 0 30px var(--light-gray) inset;
 }
 
 /* Cor do texto do autocomplete */
@@ -272,22 +309,22 @@ input:-webkit-autofill {
 }
 
 .line {
-    width: 100%;
     background-color: black;
     height: 2px;
+    width: 100%;
 }
 
 fieldset.inline-fieldset {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 input[type="radio"] + label{
-    margin-left: 4px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 16px;
+    margin-left: 4px;
 }
 
 label + input[type=radio]{
@@ -299,22 +336,22 @@ label + input.text {
 }
 
 select {
-    border-radius: 10px;
     background-color: var(--light-gray);
-    padding: 2px 10px;
+    border-radius: 10px;
     font-family: 'Roboto', sans-serif;
-    font-weight: 300;
     font-size: 16px;
+    font-weight: 300;
+    padding: 2px 10px;
 }
 
 .check-options {
-    display: flex;
     align-items: center;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
     justify-content: space-between;
     padding: 8px 0;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 16px;
 }
 
 label + input[type="checkbox"] {
@@ -322,18 +359,18 @@ label + input[type="checkbox"] {
 }
 
 .form-actions {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    display: flex;
     gap: 30px;
+    justify-content: center;
     padding: 20px 20px 0px;
 }
 
 form button {
     background-color: var(--medium-brown);
     border: none;
-    padding: 10px 20px;
     border-radius: 15px;
+    padding: 10px 20px;
     color: var(--light-gray);
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
@@ -370,17 +407,18 @@ footer > div{
 
 footer > .grupo a{
     align-items: center;
+    border-radius: 15px;
     color: var(--light-gray);
     display: flex;
     font-size: 1.2rem;
     padding: 10px;
     margin: 5px 10px;
     text-decoration: none;
+    transition: all .3s ease-in-out;
 }
 
 footer > .grupo a:hover{
-    background-color: var(--light-gray);
-    border-radius: 15px;
+    background-color: var(--light-gray);    
     color: var(--dark-brown);    
 }
 
