@@ -213,6 +213,7 @@ section.section-form{
     overflow: hidden;
     right: 20px;
     text-align: center;
+    z-index: 4;
 }
 
 .form-imagem img{
@@ -425,4 +426,10 @@ footer > .grupo a:hover{
 footer > .grupo a i{
     font-size: 1.8rem;
     margin-right: 5px;
+}
+
+@media (max-width: 450px){
+    .form-imagem{        
+        max-width: 130px;        
+    }
 }
